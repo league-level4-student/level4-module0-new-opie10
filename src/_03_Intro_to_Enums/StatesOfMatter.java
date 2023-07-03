@@ -6,8 +6,13 @@ private Double CelsiusTemp;
 private StatesOfMatter(Double temps) {
 	this.CelsiusTemp = temps;
  }
-public Double convertToFarenheit(Double temps) {
-Double	F = (temps * 9/5) + 32;
+public Double convertToFarenheit(StatesOfMatter som) {
+	Double	F = (som.CelsiusTemp * 9/5) + 32;
 	return F;
  }
+public Double getCelsiusTemp(StatesOfMatter som) {
+	Double C = som.CelsiusTemp;
+	return C;
+}
+
 }
